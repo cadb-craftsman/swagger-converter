@@ -5,6 +5,7 @@ It is available online at https://converter.swagger.io/ and as a [docker image](
 ```
 docker pull swaggerapi/swagger-converter:v1.0.6-SNAPSHOT
 docker run -it -p 8080:8080 --name swagger-converter swaggerapi/swagger-converter:v1.0.6-SNAPSHOT
+docker build -t cadbcraftsman/swagger-converter:1.0.7-SNAPSHOT -f Dockerfile
 ```
 
 Web UI is reachable at http://localhost:8080/index.html and OpenAPI spec at http://localhost:8080/api/openapi.json

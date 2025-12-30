@@ -155,7 +155,7 @@
                     </scanTargets>
                     <scanIntervalSeconds>1</scanIntervalSeconds>
                     <webApp>
-                        <contextPath>/converter/</contextPath>
+                        <contextPath>/converter</contextPath>
                     </webApp>
                     <webAppSourceDirectory>target/${project.artifactId}-${project.version}</webAppSourceDirectory>
                     <httpConnector>
