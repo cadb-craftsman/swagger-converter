@@ -9,7 +9,7 @@
     <artifactId>swagger-converter</artifactId>
     <packaging>war</packaging>
     <name>swagger-converter</name>
-    <version>1.0.6-SNAPSHOT</version>
+    <version>1.0.7-SNAPSHOT</version>
     <prerequisites>
         <maven>2.2.0</maven>
     </prerequisites>
@@ -51,11 +51,12 @@
         <defaultGoal>install</defaultGoal>
         <directory>target</directory>
         <finalName>${project.artifactId}-${project.version}</finalName>
+        <!-- 
         <resources>
             <resource>
                 <directory>src/main/resources</directory>
             </resource>
-            <resource>
+			<resource>
                 <targetPath>META-INF</targetPath>
                 <directory>../..</directory>
                 <filtering>true</filtering>
@@ -65,6 +66,7 @@
                 </includes>
             </resource>
         </resources>
+        -->
         <extensions>
             <extension>
                 <groupId>org.jvnet.wagon-svn</groupId>
@@ -153,7 +155,7 @@
                     </scanTargets>
                     <scanIntervalSeconds>1</scanIntervalSeconds>
                     <webApp>
-                        <contextPath>/</contextPath>
+                        <contextPath>/converter/</contextPath>
                     </webApp>
                     <webAppSourceDirectory>target/${project.artifactId}-${project.version}</webAppSourceDirectory>
                     <httpConnector>
