@@ -6,4 +6,4 @@ entityProcessors:
   - json
   - yaml
 
-rootPath: /converter/api
+rootPath: /swagger-converter/api

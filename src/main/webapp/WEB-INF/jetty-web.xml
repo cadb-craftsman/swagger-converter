@@ -4,5 +4,5 @@
     "http://www.eclipse.org/jetty/configure_9_3.dtd">
 
 <Configure class="org.eclipse.jetty.webapp.WebAppContext">
-    <Set name="contextPath">/converter</Set>
+    <Set name="contextPath">/swagger-converter</Set>
 </Configure>
